@@ -1,0 +1,108 @@
+.nav-bar {
+  background: #242331;
+
+  z-index: 3;
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  min-height: 500px;
+  .logo {
+    display: block;
+    padding: 8px 0;
+    img {
+      width: 100px;
+      display: block;
+      margin: 8px auto;
+    }
+  }
+  nav {
+    display: block;
+    text-align: center;
+    height: 210px;
+    position: absolute;
+    top: 45%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      display: block;
+      position: relative;
+      font-size: 22px;
+      font-weight: 300;
+      color: #533e2d;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 5px;
+      text-decoration: none;
+      height: 51px;
+      line-height: 51px;
+      opacity: 0;
+      animation: bounceIn 1s;
+      animation-fill-mode: forwards;
+      svg {
+        max-width: 150px;
+      }
+      &:after {
+        content: "";
+        opacity: 0;
+      }
+      &:hover {
+        color: #ddca7d;
+        background-color: #1d1c28;
+        svg {
+          opacity: 0;
+          animation: fadeInRight 0.4s 0s;
+          animation-fill-mode: both;
+        }
+        &:after {
+          opacity: 0;
+          animation: fadeIn 0.5s 0.2s;
+          animation-fill-mode: forwards;
+        }
+      }
+      &:first-child {
+        animation-delay: 0.5s;
+        &:hover {
+          &:after {
+            content: " Home";
+          }
+        }
+      }
+    }
+    .search-link {
+      animation-delay: 0.6s;
+      &:hover {
+        &:after {
+          content: " Search";
+        }
+      }
+    }
+    .favorites-link {
+      animation-delay: 0.7s;
+      &:hover {
+        &:after {
+          content: " Favorites";
+        }
+      }
+    }
+    .playlists-link {
+      animation-delay: 0.8s;
+      &:hover {
+        &:after {
+          content: " Playlists";
+        }
+      }
+    }
+    a.active {
+      svg {
+        color: #ddca7d;
+      }
+    }
+  }
+}
+@for $i from 12 through 15 {
+  a._#{$i} {
+    animation-delay: #{$i/10};
+  }
+}
