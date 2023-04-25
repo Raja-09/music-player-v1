@@ -1,0 +1,35 @@
+.album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  overflow-wrap: normal;
+  color: darkslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  img {
+    border-radius: 5px;
+    width: 120px;
+    aspect-ratio: 1;
+  }
+  span {
+    font-family: "Signika";
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 140px;
+    text-align: center;
+  }
+  opacity: 0;
+  animation: fadeInDownBig 1s;
+  animation-fill-mode: forwards;
+}
+@for $i from 1 through 40 {
+  ._#{$i} {
+    animation-delay: #{$i/10}s;
+  }
+}

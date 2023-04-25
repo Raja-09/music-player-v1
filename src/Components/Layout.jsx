@@ -5,11 +5,11 @@ import { Outlet } from 'react-router-dom';
 
 function Layout() {
     return (
-        <div className='container layout-page'>
+        <div className='page'>
             <SideBar />
-            <div className="page">
-                <Outlet />
-            </div>
+
+            <Outlet />
+
         </div>
     )
 }

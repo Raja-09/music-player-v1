@@ -1,4 +1,36 @@
 @import "animate.css";
 
 @import "~loaders.css/src/animations/pacman.scss";
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
 
+@font-face {
+  font-family: "Typographica";
+  src: url("./assets/fonts/Typographica-Blp5.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Circular";
+  src: url("./assets/fonts/CircularStd-Medium.otf") format("otf");
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+}
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("./assets/fonts/Gotham-Font/Gotham-Light.otf") format("otf");
+}
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&family=Signika&display=swap");
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+::-webkit-scrollbar {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

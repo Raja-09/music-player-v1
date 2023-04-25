@@ -1,0 +1,73 @@
+.banner {
+  background-color: #9eb7e5;
+  height: 300px;
+  width: 90%;
+  background-image: url("../../assets/images/peach-bg.png");
+  //   width: calc(100vw - 150px);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  position: relative;
+  
+
+  .banner-text {
+    opacity: 0;
+    margin: 10px;
+    animation: backInRight 1s 0.3s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    left: 15%;
+    font-weight: 800;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: auto;
+    font-size: 40px;
+    width: 450px;
+    overflow: hidden;
+    font-family: "Sigmar";
+    z-index: 3;
+    .special-text {
+      color: #f0623b;
+      font-weight: 800;
+      font-size: 50px;
+    }
+  }
+  img {
+    width: 300px;
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    opacity: 0;
+    animation: backInLeft 1s 0.3s;
+    animation-fill-mode: forwards;
+  }
+}
+
+.albums-content {
+  padding: 20px;
+  overflow-x: hidden;
+  position: absolute;
+  width: calc(100vw - 150px - 20px);
+  .content-descriptor {
+    display: flex;
+    color: lightgrey;
+    font-weight: 500;
+    align-items: center;
+    span {
+      content: "";
+      flex: 1;
+      margin-left: 0.5rem;
+      opacity: 0.5;
+      height: 1.5px;
+      background-color: grey;
+    }
+  }
+  .content {
+    .albums {
+      display: flex;
+      flex-direction: row;
+    }
+    height: 100%;
+  }
+}
